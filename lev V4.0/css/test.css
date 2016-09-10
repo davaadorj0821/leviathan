@@ -1,0 +1,94 @@
+.showback {	
+	background-color: white;
+	padding: 15px;
+	margin-left: 5%;
+	margin-top: 1%;
+	box-shadow: 0px 3px 2px #aab2bd;
+	color: black;
+   
+}
+h4{
+	text-align: center;
+	text-transform: uppercase;
+
+}
+span,p{ 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Үргэлжлүүлэх';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Буцаах';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ff865c;
+}
+
+.button1:hover {
+    background-color: #ff865c;
+    color: white;
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ff865c;
+    float: right;
+}
+
+.button2:hover {
+    background-color: #ff865c;
+    color: white;
+}
